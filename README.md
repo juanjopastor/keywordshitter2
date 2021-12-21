@@ -1,6 +1,6 @@
 # Keywordshitter2 - The Bulk Keyword Tool
 
-An update of the beloved keyword generation tool keywordshitter.com. [Try it here.](http://wassname.github.io/keywordshitter2/).
+An update of the beloved keyword generation tool keywordshitter.com. [Try it here.](https://juanjopastor.github.io/keywordshitter2/public/index.html).
 
 #New features:
 
