@@ -273,8 +273,10 @@ var KWS = function(){
                     if (retList && retList.length){
                         // self.storeResults(retList, search, this.url);
                         self.displayResults(retList, search, undefined, this.url);
-                        self.addResultsToQueue(retList);
-                        if (self.options.keepRunning) self.permuteResultsToQueue(retList);
+                        if (self.options.keepRunning) {
+                            self.addResultsToQueue(retList);
+                            self.permuteResultsToQueue(retList);
+                        }
                         self.markAsDone(search);
                     } else {
                         // console.debug('No suggestions for query: "',search,'"');
@@ -383,7 +385,7 @@ var KWS = function(){
             }
             if (outputKeywords.length>this.options.maxQueueDisplay) sb+='...\n';
             $("#input").val(sb);
-            $("#numofkeywords").html('Queue:' + outputKeywords.length);
+            $("#numofkeywords").html('Processed: ' + this.keywordsToQueryIndex + ' | Queue:' + outputKeywords.length);
         },
 
 
